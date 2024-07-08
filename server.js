@@ -10,7 +10,7 @@ const generateRandomNumber = () => {
 // Rota que gera um número aleatório de 8 dígitos
 app.get('/random', (req, res) => {
   const randomNumber = generateRandomNumber();
-  res.json(randomNumber);
+  res.json({ randomNumber });
 });
 
 // Inicia o servidor
